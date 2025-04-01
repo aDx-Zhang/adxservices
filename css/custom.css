@@ -1,0 +1,23 @@
+.img-loader{
+    filter: brightness(1.2);
+    transform: scale(1.4);
+    position: relative;
+    left: 4px;
+}
+.icons-cs{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.icons-cs img {
+    width: 82px; /* Or any other fixed size */
+    height: 82px;
+    object-fit: contain; /* Ensures images scale without distortion */
+}
+/* 
+@media screen and (max-width: 768px) {
+    .icons-cs{
+        gap: 0px !important;
+    }
+} */

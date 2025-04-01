@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]--><!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif]-->
+    <title>aDx | Technology &amp; IT Services</title>
+ 
+    <meta name="description"
+        content=" aDx | Technology &amp; IT Solution provides advanced technology solutions that optimize workflows and enhance business efficiency. We specialize in software services, IT infrastructure, and technology consulting, helping businesses improve operations and achieve sustainable growth.">
+    <meta name="keywords" content=" Technology, Solutions, IT, Innovation
+        , Infrastructure, Efficiency, Software, Consulting, Optimization
+        , Integration">
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="css/css-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/css-animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css-swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css-odometer.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="./js/custom.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.css" rel="stylesheet">
+    <script src="./js/map.js"></script>
+
+    <!-- Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.js"></script>
+
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="css/icomoon-style.css">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/favicon.svg">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.svg">
+</head>
+
+<body>
+
+
+
+
+
+    <style>
+        .swiper-container {
+            display: block;
+            /* Disable swiper sliding functionality */
+        }
+
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 items per row */
+            gap: 20px;
+            /* Adjust the gap between the items */
+            width: 100%;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            /* Ensure each slide takes full width of the column */
+            box-sizing: border-box;
+        }
+
+        /* For responsiveness: */
+        @media (max-width: 768px) {
+            .swiper-wrapper {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 items per row on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .swiper-wrapper {
+                grid-template-columns: 1fr;
+                /* 1 item per row on mobile */
+            }
+        }
+
+        /* Apply wrap behavior for flex items within the resolution range 500px - 1100px */
+        @media (min-width: 500px) and (max-width: 1160px) {
+            .icons-cs {
+                flex-wrap: wrap;
+                /* Allow items to wrap within the specified range */
+            }
+        }
+
+        header#header-main {
+            background: white;
+        }
+
+        form textarea, form input[type=text], form input[type=password], form input[type=datetime], form input[type=datetime-local], form input[type=date], form input[type=month], form input[type=time], form input[type=week], form input[type=number], form input[type=email], form input[type=url], form input[type=search], form input[type=tel], form input[type=color] {
+
+    background: #ffffff;
+
+    border: 1px solid #9da5b4;
+}
+.tecko-select select {
+    background-color: #ffffff;
+    border: 1px solid #9da5b4 !important;
+    color: black;
+}
+/* Transition for the container's grid layout */
+.transition-container {
+    transition: all 0.8s ease; /* Smooth transition for grid and spacing */
+}
+
+/* Transition for the input field visibility and opacity */
+.transition-input {
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+    display: none; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+}
+
+.transition-input.show {
+    display: block; /* Visible when the 'show' class is added */
+    visibility: visible; /* Make it visible */
+}
+.text_mono-gray4 {
+    color: #6c7687;
+}
+.bg_four {
+    background-color: #eaecf73b !important;
+}
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- .preload -->
+    <div id="loading">
+        <div id="loading-center">
+            <div class="loader-container">
+                <div class="wrap-loader">
+                    <div class="loader">
+                    </div>
+                    <div class="icon">
+                        <img class="img-loader" src="images/logo-loading.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.preload -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="bg_four counter-scroll">
+
+        <header class="header header-sticky style-3">
+            <div class="tf-container-inner">
+                <div class="header-inner">
+                    <div class="header-inner-wrap">
+                        <div class=" header-left d-flex align-items-center ">
+                            <div class="header-logo">
+                                <a href="index.html" class="site-logo">
+                                    <img width="95" height="25" src="./images/logo-transparent.png"
+                                        style="transform: scale(2);position: relative;left: 27px;" alt="aDx Solutions">
+
+
+                                </a>
+                            </div>
+                            <nav class="main-menu style-2">
+                                <ul class="navigation ">
+                                    <li class="has-child"><a href="javascript:void(0)">Home</a>
+                                        <ul class="submenu">
+                                            <li class="menu-item"><a href="index.html">Digital
+                                                    agency
+                                                    default</a></li>
+                                            <li class="menu-item"><a href="saas-technology.html">
+                                                    SaaS
+                                                    Technology</a></li>
+                                            <li class="menu-item "><a
+                                                    href="software-company.html">Software
+                                                    company</a></li>
+                                            <li class="menu-item"><a href="it-solution.html">IT
+                                                    Solution</a>
+                                            </li>
+                                            <li class="menu-item"><a href="application-landing.html">Application
+                                                    landing</a></li>
+                                            <li class="menu-item"><a href="marketing-startup.html">Marketing
+                                                    startup</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child  current-menu"><a href="./services.html">Services</a>
+                                        <ul class="submenu">
+                                            <li class="menu-item current-menu-item"><a href="about-us.html">About
+                                                    Us</a></li>
+                                            <li class="menu-item"><a href="team.html">Team</a></li>
+                                            <li class="menu-item"><a href="pricing.html">Pricing</a>
+                                            </li>
+                                            <li class="menu-item"><a href="shop.html">Shop</a></li>
+                                            <li class="menu-item"><a href="shop-details.html">Shop
+                                                    Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child  "><a href="javascript:void(0)">Visions</a>
+                                        <ul class="submenu">
+                                            <li class="menu-item"><a href="blog-listing.html">Blog
+                                                    Listing</a>
+                                            </li>
+                                            <li class="menu-item"><a href="blog-grid.html">Blog
+                                                    Grid</a>
+                                            </li>
+                                            <li class="menu-item"><a href="single-post.html">Single
+                                                    Post</a>
+                                            </li>
+                                            <li class="menu-item"><a href="single-post-with-sidebar.html">Single
+                                                    Post Right Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child  "><a href="javascript:void(0)">Colab</a>
+                                        <ul class="submenu">
+                                            <li class="menu-item"><a href="portfolio-grid.html">Portfolio
+                                                    Grid</a>
+                                            </li>
+                                            <li class="menu-item"><a href="portfolio-list.html">Portfolio
+                                                    List</a>
+                                            </li>
+                                            <li class="menu-item"><a href="single-project.html">Single
+                                                    project</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact_us.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-right ">
+                            <a href="#" class="tf-btn-effec-arrow btn-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <defs>
+                                        <filter id="goo">
+                                            <fegaussianblur in="SourceGraphic" stddeviation="5" result="blur">
+                                            </fegaussianblur>
+                                            <fecolormatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo">
+                                            </fecolormatrix>
+                                            <fecomposite in="SourceGraphic" in2="goo" operator="atop">
+                                            </fecomposite>
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <span class="button-text">Learn more</span>
+                                <span class="button-icon"><i class="icon-arrow-top-right"></i></span>
+                            </a>
+                            <div class="mobile-button" data-bs-toggle="offcanvas" data-bs-target="#menu-mobile"
+                                aria-controls="menu-mobile">
+                                <i class="icon-categories"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- inner -->
+
+        <!-- header -->
+        <header id="header-main" class="header  style-3">
+            <div class="tf-container-inner">
+                <div class="header-inner">
+                    <div class="header-inner-wrap">
+                        <div class=" header-left d-flex align-items-center ">
+                            <div class="header-logo">
+                                <a href="index.html" class="site-logo">
+                                    <img width="95" height="25" src="./images/logo-transparent.png"
+                                        style="transform: scale(2);position: relative;left: 27px;" alt="aDx Solutions">
+
+
+
+                                </a>
+                            </div>
+                            <nav class="main-menu style-2">
+                                <ul class="navigation ">
+                                    <li class="has-child"><a href="javascript:void(0)">Home</a>
+                                        <ul class="submenu">
+                                            <li class="menu-item"><a href="index.html">Digital
+                                                    agency
+                                                    default</a></li>
+                                            <li class="menu-item"><a href="saas-technology.html">
+                                                    SaaS
+                                                    Technology</a></li>
+                                            <li class="menu-item"><a
+                                                    href="software-company.html">Software
+                                                    company</a></li>
+                                            <li class="menu-item"><a href="it-solution.html">IT
+                                                    Solution</a>
+                                            </li>
+                                            <li class="menu-item"><a href="application-landing.html">Application
+                                                    landing</a></li>
+                                            <li class="menu-item"><a href="marketing-startup.html">Marketing
+                                                    startup</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child  current-menu"><a href="javascript:void(0)">Services</a>
+                                        <ul class="submenu">
+                                            <li class="menu-item  current-menu-item"><a href="about-us.html">About
+                                                    Us</a></li>
+                                            <li class="menu-item"><a href="team.html">Team</a></li>
+                                            <li class="menu-item"><a href="pricing.html">Pricing</a>
+                                            </li>
+                                            <li class="menu-item"><a href="shop.html">Shop</a></li>
+                                            <li class="menu-item"><a href="shop-details.html">Shop
+                                                    Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child  "><a href="javascript:void(0)">Vision</a>
+                                        <ul class="submenu">
+                                            <li class="menu-item"><a href="blog-listing.html">Blog
+                                                    Listing</a>
+                                            </li>
+                                            <li class="menu-item"><a href="blog-grid.html">Blog
+                                                    Grid</a>
+                                            </li>
+                                            <li class="menu-item"><a href="single-post.html">Single
+                                                    Post</a>
+                                            </li>
+                                            <li class="menu-item"><a href="single-post-with-sidebar.html">Single
+                                                    Post Right Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child  "><a href="javascript:void(0)">Colab</a>
+                                        <ul class="submenu">
+                                            <li class="menu-item"><a href="portfolio-grid.html">Portfolio
+                                                    Grid</a>
+                                            </li>
+                                            <li class="menu-item"><a href="portfolio-list.html">Portfolio
+                                                    List</a>
+                                            </li>
+                                            <li class="menu-item"><a href="single-project.html">Single
+                                                    project</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact_us.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-right ">
+                            <a href="#" class="tf-btn-effec-arrow btn-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <defs>
+                                        <filter id="goo">
+                                            <fegaussianblur in="SourceGraphic" stddeviation="5" result="blur">
+                                            </fegaussianblur>
+                                            <fecolormatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo">
+                                            </fecolormatrix>
+                                            <fecomposite in="SourceGraphic" in2="goo" operator="atop">
+                                            </fecomposite>
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <span class="button-text">Learn more</span>
+                                <span class="button-icon"><i class="icon-arrow-top-right"></i></span>
+                            </a>
+                            <div class="mobile-button" data-bs-toggle="offcanvas" data-bs-target="#menu-mobile"
+                                aria-controls="menu-mobile">
+                                <i class="icon-categories"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- /banner-title -->
+
+
+
+
+        <!-- .section-service -->
+        <div class="section-service style-2 tecko-spacing-15 mt_30">
+            <div class="tf-container-inner">
+
+                <div class="heading-section text-center mt_40 mb_10">
+                    <span
+                    class="sub-heading-section style-1 text-body-3 justify-content-center align-items-center mb_14 gap-8"><img
+                        src="images/icon-multi-start.svg" alt="">
+                    <span>Privacy</span></span>
+                    <h1 class="heading-title font3 fw-4 text-center split-text effect-left">Contact Us Anytime !</h1>
+
+                </div>
+
+
+                <div class="heading-section mb_59 d-flex justify-content-between flex-wrap-lg gap-12">
+                    <div class="left">
+
+                    </div>
+
+                </div>
+      
+                <div class="tf-container-inner">
+                    <div class="section-contact style-2  ">
+                        <div class="d-flex flex-wrap-lg gap-24">
+                            <div class="tf-col-lg-6">
+                                <div class="heading-section">
+                                    <span class="point point-primary text-body-2 mb_6">Contact Us</span>
+                                    <h4 class="heading-title mb_13">Your Fast-Track to Effortless Communication</h4>
+                                    <p class="text_mono-gray4 text-body-1">Got questions, feedback, or inquiries? Reach out now by filling out the form below. Our dedicated team is committed to providing swift responses and will get back to you within 3 hours. For immediate assistance, feel free to contact us directly via phone or email. We’re eager to assist you and look forward to connecting with you!</p>
+                                </div>
+                                
+                            </div>
+                            <div class="form-request style-1 tf-col-lg-6">
+                                <img src="images/other_imgs/privacy_polic.png" alt="Contact Us" style="width: 100%; height: auto;">
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="tf-container-inner">
+                    <div class="section-space">
+                        <div class="left d-flex flex-direction-column justify-content-between">
+                            <div class="heading-section">
+                                <span class="point point-color-1 text-body-2 -mt_6 mb_5">Our space</span>
+                                <h2 class=" mb_13">Where you can <br> find us ?</h2>
+                                <p class="mb_30">Our location offers a convenient and <br> welcoming space for
+                                    visitors
+                                    and clients <br>
+                                    alike have to say</p>
+                                <a href="#" class="tf-btn btn-primary2" style="--tecko-button-width: 157.594px;">
+                                    <span>See our location</span>
+                                    <span class="bg-effect"></span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <!--.map -->
+        
+                            <div class="map map-box relative">
+                                <div id="map" style="width: 100%; height: 350px;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div><!-- /.section-service -->
+
+
+        <!-- Footer -->
+        <footer id="footer" class="style-3">
+            <div class="tf-container-inner ">
+                <div class="footer-body">
+                    <div class="top">
+                        <div class="content-left tf-col-lg-6 ">
+                            <div class="mt_6 d-flex content flex-direction-column justify-content-between gap-30px ">
+                                <div>
+                                    <a href="index.html" class="mb_39">
+                                        <img width="95" height="25" src="./images/logo-transparent.png" style="transform: scale(3);
+                                        position: relative;
+                                        left: 74px;" alt="aDx Solutions">
+
+
+                                    </a>
+                                    <h3 class="mb_15">Our insights to your <br> inbox</h3>
+                                    <form id="subscribe-form" action="#" class="form-newsletter style-2 subscribe-form"
+                                        method="post" accept-charset="utf-8" data-mailchimp="true">
+                                        <div id="subscribe-content" class="subscribe-content">
+                                            <fieldset class="email">
+                                                <input id="subscribe-email" type="email" name="email-form"
+                                                    class="subscribe-email" placeholder="Your Email..." tabindex="0"
+                                                    aria-required="true">
+                                            </fieldset>
+                                            <div class="button-submit">
+                                                <button id="subscribe-button" class="subscribe-button " type="button">
+                                                    <i class="icon-arrow-top-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="subscribe-msg" class="subscribe-msg"></div>
+                                    </form>
+                                </div>
+                                <div class="tecko-social style-2 mb_31">
+                                    <a href="#" class="icon-twitter-x"></a>
+                                    <a href="#" class="icon-facebook-f"></a>
+                                    <a href="#" class="icon-linkedin-in"></a>
+                                    <a href="#" class="icon-instagram"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-right tf-col-lg-7 d-flex ">
+                            <div class="footer-col-block contact ">
+                                <div class=" footer-heading sub-heading fw-6  footer-heading-mobile">Contact
+                                </div>
+                                <div class="tf-collapse-content">
+                                    <ul class="footer-menu-list d-flex gap-15 flex-direction-column">
+                                        <li>
+                                            <div class="text-body-3  text_mono-gray">Address</div>
+                                            <div class=" text-body-3 ">58 Howard, San <br> Francisco CA
+                                                411
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text-body-3  text_mono-gray">Email</div>
+                                            <div><a href="#" class=" text-body-3  link">contact@aDx.co</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text-body-3  text_mono-gray">Fax</div>
+                                            <div><a href="#" class=" text-body-3  link">fax@aDx.co</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text-body-3  text_mono-gray">Work Hour</div>
+                                            <div class=" text-body-3">Mon - Sat: 9:00 - 18:00</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-col-block service">
+                                <div class=" footer-heading sub-heading fw-6  footer-heading-mobile">Services
+                                </div>
+                                <div class="tf-collapse-content">
+                                    <ul class="footer-menu-listt d-flex gap-14 flex-direction-column">
+                                        <li class="text-body-3 "><a class="text_mono-gray link" href="#">Crm
+                                                Travel</a></li>
+                                        <li class="text-body-3 "><a class="text_mono-gray link" href="#">Technology
+                                                Partner</a>
+                                        </li>
+                                        <li class="text-body-3 "><a class="text_mono-gray link" href="#">Digital
+                                                Tranfomation</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-col-block infor">
+                                <div class="footer-heading sub-heading fw-6  footer-heading-mobile">Information
+                                </div>
+                                <div class="tf-collapse-content">
+                                    <ul class="footer-menu-listt d-flex gap-14 flex-direction-column">
+                                        <li class="text-body-3 "><a class="text_mono-gray link"
+                                                href="about-us.html">About aDx</a>
+                                        </li>
+                                        <li class="text-body-3 "><a class="text_mono-gray link"
+                                                href="blog-grid.html">News</a>
+                                        </li>
+                                        <li class="text-body-3 "><a class="text_mono-gray link"
+                                                href="portfolio-grid.html">Services</a>
+                                        </li>
+                                        <li class="text-body-3 "><a class="text_mono-gray link"
+                                                href="contact_us.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p class="text_mono-gray text-body-3">&copy; 2025 <a href="#" class="link text_mono-gray">aDx
+                                Zhang Services Co. Ltd</a> All Right
+                            Reserved</p>
+                        <ul class="right">
+                            <li><a href="#" class="link">Suppliers terms</a></li>
+                            <li><a href="#" class="link">Terms of Services</a></li>
+                            <li><a href="#" class="link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- /.Footer -->
+
+
+    </div>
+    <!-- /wrapper -->
+
+
+    <!-- Start Mobile Menu -->
+    <div class="offcanvas offcanvas-start canvas-mb" id="menu-mobile">
+        <div class="offcanvas-header top-nav-mobile justify-content-between">
+            <a href="index.html" class="logo">
+                <img width="195" height="25" src="images/logo-transparent.png" alt="logo">
+            </a>
+            <div class="close-menu" data-bs-dismiss="offcanvas">
+                <i class=" icon-times-solid"></i>
+            </div>
+        </div>
+        <div class="mb-canvas-content">
+            <div class="mb-body">
+                <div class="mb-content-top">
+                    <ul class="nav-ul-mb" id="wrapper-menu-navigation">
+                        <li class="nav-mb-item active">
+                            <a href="#dropdown-menu-home" class="collapsed mb-menu-link" data-bs-toggle="collapse"
+                                aria-expanded="true" aria-controls="dropdown-menu-home">
+                                <span>Home</span>
+                                <span class="btn-open-sub"></span>
+                            </a>
+                            <div id="dropdown-menu-home" class="collapse" data-bs-parent="#menu-mobile">
+                                <ul class="sub-nav-menu">
+                                    <li><a href="index.html" class="sub-nav-link ">Digital agency default</a></li>
+                                    <li><a href="saas-technology.html" class="sub-nav-link">SaaS Technology</a>
+                                    </li>
+                                    <li><a href="software-company.html" class="sub-nav-link active ">Software
+                                            company</a>
+                                    </li>
+                                    <li><a href="it-solution.html" class="sub-nav-link">IT Solution</a>
+                                    </li>
+                                    <li><a href="application-landing.html" class="sub-nav-link">Application landing</a>
+                                    </li>
+                                    <li><a href="marketing-startup.html" class="sub-nav-link">Marketing startup</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-mb-item">
+                            <a href="#dropdown-menu-company" class="collapsed mb-menu-link" data-bs-toggle="collapse"
+                                aria-expanded="true" aria-controls="dropdown-menu-company">
+                                <span>Pages</span>
+                                <span class="btn-open-sub"></span>
+                            </a>
+                            <div id="dropdown-menu-company" class="collapse" data-bs-parent="#menu-mobile">
+                                <ul class="sub-nav-menu">
+                                    <li><a href="about-us.html" class="sub-nav-link ">About Us</a></li>
+                                    <li><a href="team.html" class="sub-nav-link">Team</a>
+                                    </li>
+                                    <li><a href="pricing.html" class="sub-nav-link">Pricing</a>
+                                    </li>
+                                    <li><a href="shop.html" class="sub-nav-link">Shop</a>
+                                    </li>
+                                    <li><a href="shop-details.html" class="sub-nav-link">Shop Details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-mb-item">
+                            <a href="#dropdown-menu-blog" class="collapsed mb-menu-link" data-bs-toggle="collapse"
+                                aria-expanded="true" aria-controls="dropdown-menu-blog">
+                                <span>Blog</span>
+                                <span class="btn-open-sub"></span>
+                            </a>
+                            <div id="dropdown-menu-blog" class="collapse" data-bs-parent="#menu-mobile">
+                                <ul class="sub-nav-menu">
+                                    <li><a href="blog-listing.html" class="sub-nav-link ">Blog Listing</a></li>
+                                    <li><a href="blog-grid.html" class="sub-nav-link">Blog Grid</a>
+                                    </li>
+                                    <li><a href="single-post.html" class="sub-nav-link">Single Post</a>
+                                    </li>
+                                    <li><a href="single-post-with-sidebar.html" class="sub-nav-link">Single Post
+                                            with sidebar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-mb-item">
+                            <a href="#dropdown-menu-project" class="collapsed mb-menu-link" data-bs-toggle="collapse"
+                                aria-expanded="true" aria-controls="dropdown-menu-project">
+                                <span>Project</span>
+                                <span class="btn-open-sub"></span>
+                            </a>
+                            <div id="dropdown-menu-project" class="collapse" data-bs-parent="#menu-mobile">
+                                <ul class="sub-nav-menu">
+                                    <li><a href="portfolio-list.html" class="sub-nav-link ">Portfolio List</a></li>
+                                    <li><a href="portfolio-grid.html" class="sub-nav-link">Portfolio Grid</a>
+                                    </li>
+                                    <li><a href="single-project.html" class="sub-nav-link">Single Project</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-mb-item">
+                            <a href="contact_us.html" class="mb-menu-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-other-content">
+                    <ul class="mb-info">
+                        <li>
+                            <p class="text_mono-gray">
+                                Address:
+                                <a target="_blank" href="https://www.google.com/maps?q=16/9,ScotlandUnitedKingdom">
+                                    <span class="fw-5 text-white">16/9, Scotland United Kingdom</span>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text_mono-gray">
+                                Email:
+                                <a href="mailto:fodgesol@example.com">
+                                    <span class="fw-5 text-white ">fodgesol@example.com</span>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text_mono-gray">
+                                Phone:
+                                <a href="tel:+11635565389">
+                                    <span class="fw-5 text-white">+1 16355 65389</span>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Mobile Menu -->
+
+    <!-- .prograss -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div> <!-- /.prograss -->
+
+<script src="./js/contact_us.js"></script>
+
+
+
+
+
+
+    <!-- Javascript -->
+    <script src="js/588-js-bootstrap.min.js"></script>
+    <script src="js/2739-js-jquery.min.js"></script>
+    <script src="js/1917-js-lazysize.min.js"></script>
+    <script src="js/8048-js-swiper-bundle.min.js"></script>
+    <script src="js/7545-js-carousel.js"></script>
+    <script src="js/2969-js-odometer.min.js"></script>
+    <script src="js/1320-js-counter.js"></script>
+    <script src="js/3211-js-infinityslide.js"></script>
+    <script src="js/63-js-ScrollTrigger.min.js"></script>
+    <script src="js/8818-js-Splitetext.js"></script>
+    <script src="js/2131-js-gsap.min.js"></script>
+    <script src="js/1343-js-handleeffectgsap.js"></script>
+    <script src="js/9612-js-main.js"></script>
+    <!-- /Javascript -->
+
+</body>
+
+</html>
